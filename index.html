@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #5 - Part 2: Individual Work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Assignment #5: Part 2 — Individual Work</h1>
+        <p>Student: Narimanova Anelya| Group: MT-2502</p>
+
+        <section class="task-section" id="task6">
+            <h2>Task 6. A counter with click events</h2>
+            <div class="counter-box">
+                <span id="counterValue">0</span>
+                <div class="btn-group">
+                    <button id="decreaseBtn">Decrease</button>
+                    <button id="resetBtn">Reset</button>
+                    <button id="increaseBtn">Increase</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="task-section" id="task7">
+            <h2>Task 7. Live text preview</h2>
+            <div class="form-control-group">
+                <label for="liveInput">Type something:</label>
+                <input type="text" id="liveInput" placeholder="Start typing...">
+            </div>
+            <p><strong>Preview:</strong> <span id="textPreview">Your text will appear here</span></p>
+            <p>Character count: <span id="charCount">0</span></p>
+            <button id="clearInputBtn">Clear</button>
+        </section>
+
+        <section class="task-section" id="task8">
+            <h2>Task 8. Change an image with a select control</h2>
+            <div class="form-control-group">
+                <label for="imageSelect">Choose an image:</label>
+                <select id="imageSelect">
+                    <option value="spider-man">Spider-Man</option>
+                    <option value="loki">Loki</option>
+                    <option value="captain">Captain America</option>
+                </select>
+            </div>
+            <div class="image-container">
+                <img id="displayImage" src="images/spider-man.jpeg" alt="Spider-Man">
+                <p id="imageCaption">Caption: Spider-Man</p>
+            </div>
+        </section>
+
+        <section class="task-section" id="task9">
+            <h2>Task 9. Keyboard events</h2>
+            <form id="keyForm" onsubmit="event.preventDefault();">
+                <div class="form-control-group">
+                    <label for="keyInput">Focused Input (Press Enter or Escape):</label>
+                    <input type="text" id="keyInput" placeholder="Type and press keys...">
+                </div>
+            </form>
+            <p>Last pressed key: <span id="keyPressedStatus">None</span></p>
+            <p>Submitted text result: <strong id="keyResult">None</strong></p>
+        </section>
+
+        <section class="task-section" id="task10">
+            <h2>Task 10. Mouse and focus events</h2>
+            <div id="focusableCard" tabindex="0" class="interactive-card">
+                Hover over me or focus me using the Tab key!
+            </div>
+            <p id="cardInstruction">Instruction: Move your mouse over the card or tab into it.</p>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
